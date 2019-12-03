@@ -18,6 +18,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         })
         .collect();
 
+    iter[1] = 12;
+    iter[2] = 2;
+
     let mut pc = 0;
     loop {
         match iter[pc] {
